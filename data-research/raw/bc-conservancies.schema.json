@@ -1,0 +1,244 @@
+{
+ "currentVersion": 10.91,
+ "cimVersion": "2.9.0",
+ "id": 269,
+ "name": "TANTALIS - Conservancy Areas",
+ "type": "Feature Layer",
+ "description": " Feature class name is 'WHSE_TANTALIS.TA_CONSERVANCY_AREAS_SVW'. See metadata: https://catalogue.data.gov.bc.ca/dataset/550b3133-2004-468f-ba1f-b95d0e281e78",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 102190,
+  "latestWkid": 3005,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -13239300,
+  "falseY": -8610100,
+  "xyUnits": 10000,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 5000000,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [
+     171,
+     237,
+     140,
+     255
+    ],
+    "outline": {
+     "type": "esriSLS",
+     "style": "esriSLSSolid",
+     "color": [
+      255,
+      211,
+      127,
+      255
+     ],
+     "width": 0.4
+    }
+   },
+   "label": "Conservancy Areas"
+  },
+  "scaleSymbols": true,
+  "transparency": 30,
+  "labelingInfo": null
+ },
+ "defaultVisibility": false,
+ "extent": {
+  "xmin": 509785.6032,
+  "ymin": 543782.7623,
+  "xmax": 1269999.5592,
+  "ymax": 1697225.3368,
+  "spatialReference": {
+   "wkid": 102190,
+   "latestWkid": 3005,
+   "xyTolerance": 0.002,
+   "zTolerance": 0.002,
+   "mTolerance": 0.001,
+   "falseX": -1.4663107336154819E7,
+   "falseY": -9909931.655214028,
+   "xyUnits": 2.875291301218968E8,
+   "falseZ": -1000000,
+   "zUnits": 1000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "CONSERVANCY_AREA_NAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "SHAPE.AREA",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.AREA",
+   "domain": null
+  },
+  {
+   "name": "SHAPE.LEN",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.LEN",
+   "domain": null
+  },
+  {
+   "name": "ADMIN_AREA_SID",
+   "type": "esriFieldTypeInteger",
+   "alias": "ADMIN_AREA_SID",
+   "domain": null
+  },
+  {
+   "name": "CONSERVANCY_AREA_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "CONSERVANCY_AREA_NAME",
+   "length": 200,
+   "domain": null
+  },
+  {
+   "name": "ORCS_PRIMARY",
+   "type": "esriFieldTypeString",
+   "alias": "ORCS_PRIMARY",
+   "length": 4,
+   "domain": null
+  },
+  {
+   "name": "ORCS_SECONDARY",
+   "type": "esriFieldTypeString",
+   "alias": "ORCS_SECONDARY",
+   "length": 2,
+   "domain": null
+  },
+  {
+   "name": "ESTABLISHMENT_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "ESTABLISHMENT_DATE",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "OFFICIAL_AREA_HA",
+   "type": "esriFieldTypeDouble",
+   "alias": "OFFICIAL_AREA_HA",
+   "domain": null
+  },
+  {
+   "name": "PARK_MANAGEMENT_PLAN_URL",
+   "type": "esriFieldTypeString",
+   "alias": "PARK_MANAGEMENT_PLAN_URL",
+   "length": 512,
+   "domain": null
+  },
+  {
+   "name": "FEATURE_CODE",
+   "type": "esriFieldTypeString",
+   "alias": "FEATURE_CODE",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "SHAPE",
+   "type": "esriFieldTypeGeometry",
+   "alias": "SHAPE",
+   "domain": null
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "SHAPE",
+  "type": "esriFieldTypeGeometry",
+  "alias": "SHAPE"
+ },
+ "indexes": null,
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": true
+ },
+ "dateFieldsTimeReference": {
+  "timeZone": "Pacific Standard Time",
+  "respectsDaylightSaving": true
+ },
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeAreaFieldName": "SHAPE.AREA",
+  "shapeLengthFieldName": "SHAPE.LEN",
+  "units": "esriMeters"
+ },
+ "hasMetadata": false,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

@@ -1,43 +1,20 @@
 {
-  "name": "bootstrap",
-  "main": "expo-router/entry",
-  "version": "1.0.0",
-  "dependencies": {
-    "@expo/ui": "~57.0.9",
-    "expo": "~57.0.11",
-    "expo-constants": "~57.0.9",
-    "expo-device": "~57.0.1",
-    "expo-font": "~57.0.1",
-    "expo-glass-effect": "~57.0.1",
-    "expo-image": "~57.0.2",
-    "expo-linking": "~57.0.5",
-    "expo-router": "~57.0.11",
-    "expo-splash-screen": "~57.0.5",
-    "expo-status-bar": "~57.0.1",
-    "expo-symbols": "~57.0.2",
-    "expo-system-ui": "~57.0.2",
-    "expo-web-browser": "~57.0.2",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "react-native": "0.86.2",
-    "react-native-gesture-handler": "~2.32.0",
-    "react-native-reanimated": "4.5.1",
-    "react-native-safe-area-context": "~5.7.0",
-    "react-native-screens": "~4.26.0",
-    "react-native-web": "~0.21.0",
-    "react-native-worklets": "0.10.1"
-  },
-  "devDependencies": {
-    "@types/react": "~19.2.2",
-    "typescript": "~6.0.3"
-  },
+  "name": "every-park",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "lint": "expo lint"
+    "build": "node scripts/build-vercel-static.mjs",
+    "db:create": "node database/scripts/create-database.mjs",
+    "db:migrate": "node database/scripts/migrate.mjs",
+    "db:load": "node database/scripts/load-data.mjs",
+    "db:validate": "node database/scripts/validate.mjs",
+    "db:setup": "npm run db:migrate && npm run db:load",
+    "db:up": "docker compose -f database/docker-compose.yml up -d",
+    "db:down": "docker compose -f database/docker-compose.yml down"
   },
-  "private": true
+  "dependencies": {
+    "pg": "8.16.3"
+  }
 }
+

@@ -1,0 +1,325 @@
+{
+ "currentVersion": 10.91,
+ "cimVersion": "2.9.0",
+ "id": 60,
+ "name": "BC Geographical Names",
+ "type": "Feature Layer",
+ "description": "Feature class name is 'WHSE_BASEMAPPING.GNS_GEOGRAPHICAL_NAMES_SP'. See metadata: https://catalogue.data.gov.bc.ca/dataset/43805524-4add-4474-ad53-1a985930f352",
+ "geometryType": "esriGeometryPoint",
+ "sourceSpatialReference": {
+  "wkid": 102190,
+  "latestWkid": 3005,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -13239300,
+  "falseY": -8610100,
+  "xyUnits": 10000,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 35000000,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSMS",
+    "style": "esriSMSCircle",
+    "color": [
+     69,
+     82,
+     142,
+     255
+    ],
+    "size": 4,
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "outline": {
+     "color": [
+      0,
+      0,
+      0,
+      255
+     ],
+     "width": 0.7
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": false,
+ "extent": {
+  "xmin": 200000,
+  "ymin": 200000,
+  "xmax": 2000000,
+  "ymax": 2000000,
+  "spatialReference": {
+   "wkid": 102190,
+   "latestWkid": 3005,
+   "xyTolerance": 0.001,
+   "zTolerance": 2,
+   "mTolerance": 0.001,
+   "falseX": -13239300,
+   "falseY": -8610100,
+   "xyUnits": 3.162795662266049E8,
+   "falseZ": 0,
+   "zUnits": 1,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "GEOGRAPHICAL_NAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "GEOGRAPHICAL_NAMES_ID",
+   "type": "esriFieldTypeInteger",
+   "alias": "GEOGRAPHICAL_NAMES_ID",
+   "domain": null
+  },
+  {
+   "name": "FEATURE_ID",
+   "type": "esriFieldTypeInteger",
+   "alias": "FEATURE_ID",
+   "domain": null
+  },
+  {
+   "name": "FEATURE_UUID",
+   "type": "esriFieldTypeString",
+   "alias": "FEATURE_UUID",
+   "length": 32,
+   "domain": null
+  },
+  {
+   "name": "GEOGRAPHICAL_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "GEOGRAPHICAL_NAME",
+   "length": 100,
+   "domain": null
+  },
+  {
+   "name": "FEATURE_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "FEATURE_TYPE",
+   "length": 40,
+   "domain": null
+  },
+  {
+   "name": "FEATURE_TYPE_CODE",
+   "type": "esriFieldTypeInteger",
+   "alias": "FEATURE_TYPE_CODE",
+   "domain": null
+  },
+  {
+   "name": "FEATURE_CATEGORY",
+   "type": "esriFieldTypeString",
+   "alias": "FEATURE_CATEGORY",
+   "length": 70,
+   "domain": null
+  },
+  {
+   "name": "FEATURE_CLASS",
+   "type": "esriFieldTypeString",
+   "alias": "FEATURE_CLASS",
+   "length": 240,
+   "domain": null
+  },
+  {
+   "name": "LATITUDE",
+   "type": "esriFieldTypeDouble",
+   "alias": "LATITUDE",
+   "domain": null
+  },
+  {
+   "name": "LATITUDE_DMS",
+   "type": "esriFieldTypeString",
+   "alias": "LATITUDE_DMS",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "LONGITUDE",
+   "type": "esriFieldTypeDouble",
+   "alias": "LONGITUDE",
+   "domain": null
+  },
+  {
+   "name": "LONGITUDE_DMS",
+   "type": "esriFieldTypeString",
+   "alias": "LONGITUDE_DMS",
+   "length": 11,
+   "domain": null
+  },
+  {
+   "name": "DATUM",
+   "type": "esriFieldTypeString",
+   "alias": "DATUM",
+   "length": 5,
+   "domain": null
+  },
+  {
+   "name": "POSITION_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "POSITION_TYPE",
+   "length": 18,
+   "domain": null
+  },
+  {
+   "name": "NTS_MAPSHEET",
+   "type": "esriFieldTypeString",
+   "alias": "NTS_MAPSHEET",
+   "length": 12,
+   "domain": null
+  },
+  {
+   "name": "RELATIVE_LOCATION",
+   "type": "esriFieldTypeString",
+   "alias": "RELATIVE_LOCATION",
+   "length": 260,
+   "domain": null
+  },
+  {
+   "name": "LAND_DISTRICT",
+   "type": "esriFieldTypeString",
+   "alias": "LAND_DISTRICT",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "MIN_SCALE_DENOMINATOR",
+   "type": "esriFieldTypeInteger",
+   "alias": "MIN_SCALE_DENOMINATOR",
+   "domain": null
+  },
+  {
+   "name": "MAX_SCALE_DENOMINATOR",
+   "type": "esriFieldTypeInteger",
+   "alias": "MAX_SCALE_DENOMINATOR",
+   "domain": null
+  },
+  {
+   "name": "FEATURE_CODE",
+   "type": "esriFieldTypeString",
+   "alias": "FEATURE_CODE",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "GEOMETRY",
+   "type": "esriFieldTypeGeometry",
+   "alias": "GEOMETRY",
+   "domain": null
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "GEOMETRY",
+  "type": "esriFieldTypeGeometry",
+  "alias": "GEOMETRY"
+ },
+ "indexes": [
+  {
+   "name": "GNS_GN_PK",
+   "fields": "GEOGRAPHICAL_NAMES_ID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "R239403_SDE_ROWID_UK",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "A4376_IX1",
+   "fields": "GEOMETRY",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": true
+ },
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

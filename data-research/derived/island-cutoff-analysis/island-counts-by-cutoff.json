@@ -1,0 +1,168 @@
+{
+  "source": "C:\\repo\\every-park\\data-research\\derived\\vancouver-island-islands.geojson",
+  "source_collection_name": "fwa-islands-vancouver-island-working-extent",
+  "source_feature_count": 2564,
+  "source_minimum_area_ha": 1.0001567212224,
+  "source_maximum_area_ha": 3177025.74762242,
+  "source_coordinate_positions": 741257,
+  "source_query": {
+    "layer": "BC Freshwater Atlas Islands (FWA_ISLANDS_POLY)",
+    "working_extent_wgs84": [
+      -129.15,
+      48.18,
+      -122.88,
+      51.15
+    ],
+    "spatial_predicate": "intersects",
+    "upstream_minimum_area_ha": 1
+  },
+  "interpretation": "Counts are FWA polygon features intersecting the rectangular working extent, not a count of the agreed Vancouver Island tourism region. The source was already filtered to AREA_HA >= 1, so cutoffs below one hectare cannot reveal smaller source features.",
+  "recommended_cutoff_ha": 10,
+  "recommendation": "Use 10 ha as a background-island baseline, then retain explicitly selected visitor islands and islands intersecting park polygons at any available size. Apply geometry simplification separately; an area cutoff alone removes features much faster than coordinate positions.",
+  "cutoffs": [
+    {
+      "cutoff_ha": 0,
+      "island_count": 2564,
+      "marine_count": 1824,
+      "fresh_count": 709,
+      "marine_fresh_count": 31,
+      "named_count": 1336,
+      "unnamed_count": 1228,
+      "coordinate_positions": 741257,
+      "features_retained_pct": 100.0,
+      "coordinate_positions_retained_pct": 100.0
+    },
+    {
+      "cutoff_ha": 0.1,
+      "island_count": 2564,
+      "marine_count": 1824,
+      "fresh_count": 709,
+      "marine_fresh_count": 31,
+      "named_count": 1336,
+      "unnamed_count": 1228,
+      "coordinate_positions": 741257,
+      "features_retained_pct": 100.0,
+      "coordinate_positions_retained_pct": 100.0
+    },
+    {
+      "cutoff_ha": 0.5,
+      "island_count": 2564,
+      "marine_count": 1824,
+      "fresh_count": 709,
+      "marine_fresh_count": 31,
+      "named_count": 1336,
+      "unnamed_count": 1228,
+      "coordinate_positions": 741257,
+      "features_retained_pct": 100.0,
+      "coordinate_positions_retained_pct": 100.0
+    },
+    {
+      "cutoff_ha": 1,
+      "island_count": 2564,
+      "marine_count": 1824,
+      "fresh_count": 709,
+      "marine_fresh_count": 31,
+      "named_count": 1336,
+      "unnamed_count": 1228,
+      "coordinate_positions": 741257,
+      "features_retained_pct": 100.0,
+      "coordinate_positions_retained_pct": 100.0
+    },
+    {
+      "cutoff_ha": 2,
+      "island_count": 1692,
+      "marine_count": 1235,
+      "fresh_count": 431,
+      "marine_fresh_count": 26,
+      "named_count": 1005,
+      "unnamed_count": 687,
+      "coordinate_positions": 707568,
+      "features_retained_pct": 65.99,
+      "coordinate_positions_retained_pct": 95.46
+    },
+    {
+      "cutoff_ha": 5,
+      "island_count": 969,
+      "marine_count": 742,
+      "fresh_count": 211,
+      "marine_fresh_count": 16,
+      "named_count": 677,
+      "unnamed_count": 292,
+      "coordinate_positions": 665654,
+      "features_retained_pct": 37.79,
+      "coordinate_positions_retained_pct": 89.8
+    },
+    {
+      "cutoff_ha": 10,
+      "island_count": 630,
+      "marine_count": 506,
+      "fresh_count": 113,
+      "marine_fresh_count": 11,
+      "named_count": 495,
+      "unnamed_count": 135,
+      "coordinate_positions": 635835,
+      "features_retained_pct": 24.57,
+      "coordinate_positions_retained_pct": 85.78
+    },
+    {
+      "cutoff_ha": 25,
+      "island_count": 355,
+      "marine_count": 305,
+      "fresh_count": 42,
+      "marine_fresh_count": 8,
+      "named_count": 316,
+      "unnamed_count": 39,
+      "coordinate_positions": 598126,
+      "features_retained_pct": 13.85,
+      "coordinate_positions_retained_pct": 80.69
+    },
+    {
+      "cutoff_ha": 50,
+      "island_count": 229,
+      "marine_count": 205,
+      "fresh_count": 18,
+      "marine_fresh_count": 6,
+      "named_count": 214,
+      "unnamed_count": 15,
+      "coordinate_positions": 570088,
+      "features_retained_pct": 8.93,
+      "coordinate_positions_retained_pct": 76.91
+    },
+    {
+      "cutoff_ha": 100,
+      "island_count": 158,
+      "marine_count": 144,
+      "fresh_count": 10,
+      "marine_fresh_count": 4,
+      "named_count": 151,
+      "unnamed_count": 7,
+      "coordinate_positions": 546610,
+      "features_retained_pct": 6.16,
+      "coordinate_positions_retained_pct": 73.74
+    },
+    {
+      "cutoff_ha": 500,
+      "island_count": 80,
+      "marine_count": 74,
+      "fresh_count": 3,
+      "marine_fresh_count": 3,
+      "named_count": 79,
+      "unnamed_count": 1,
+      "coordinate_positions": 502049,
+      "features_retained_pct": 3.12,
+      "coordinate_positions_retained_pct": 67.73
+    },
+    {
+      "cutoff_ha": 1000,
+      "island_count": 55,
+      "marine_count": 51,
+      "fresh_count": 1,
+      "marine_fresh_count": 3,
+      "named_count": 55,
+      "unnamed_count": 0,
+      "coordinate_positions": 472435,
+      "features_retained_pct": 2.15,
+      "coordinate_positions_retained_pct": 63.73
+    }
+  ]
+}

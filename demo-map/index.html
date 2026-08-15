@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive map of parks and islands around Vancouver Island." />
+    <title>Every Park — Vancouver Island</title>
+    <link rel="stylesheet" href="./vendor/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="map-stage" aria-label="Interactive protected areas map">
+        <div id="map"></div>
+        <button id="panel-toggle" class="panel-toggle" type="button" aria-controls="sidebar" aria-expanded="true">Hide details</button>
+        <div id="loading" class="loading-card" role="status">
+          <span class="loading-dot"></span>
+          Loading protected areas…
+        </div>
+      </section>
+
+      <aside id="sidebar" class="sidebar">
+        <header class="hero">
+          <button id="back-button" class="back-button" type="button" hidden>← All authorities</button>
+          <p id="eyebrow" class="eyebrow">Every Park · Island overview</p>
+          <h1 id="view-title">Vancouver Island park regions</h1>
+          <p id="view-intro" class="intro">Choose one of seven regional authorities to reveal its municipalities and electoral areas.</p>
+        </header>
+
+        <section class="summary" aria-label="Dataset summary">
+          <div><strong id="summary-one">—</strong><span id="summary-one-label">places</span></div>
+          <div><strong id="summary-two">—</strong><span id="summary-two-label">seen</span></div>
+          <div><strong id="summary-three">7</strong><span id="summary-three-label">authorities</span></div>
+        </section>
+
+        <section id="overview-controls" class="controls">
+          <div class="section-heading overview-heading"><h2>Regional authorities</h2></div>
+          <div id="authority-controls" class="authority-controls"></div>
+        </section>
+
+        <section id="subregion-controls" class="controls" hidden>
+          <div class="section-heading overview-heading"><h2>Local areas</h2></div>
+          <div id="subregion-list" class="authority-controls"></div>
+        </section>
+
+        <section id="region-controls" class="controls" hidden>
+          <label class="search-label" for="park-search">Find a place</label>
+          <div class="search-wrap">
+            <input id="park-search" type="search" placeholder="Find a place in this region" autocomplete="off" />
+            <button id="clear-search" type="button" aria-label="Clear search">×</button>
+          </div>
+          <div id="search-results" class="search-results" role="listbox"></div>
+
+          <div class="section-heading">
+            <h2>Place types</h2>
+            <button id="reset-view" type="button">Reset view</button>
+          </div>
+          <div id="layer-controls" class="layer-controls"></div>
+
+          <div class="section-heading place-list-heading">
+            <h2>Places</h2>
+            <span id="place-list-count"></span>
+          </div>
+          <div id="place-list" class="place-list"></div>
+        </section>
+
+        <section class="note">
+          <strong>How this hierarchy works</strong>
+          <p>Authority, municipality, and electoral-area zones use official BC boundaries. Provincial and national parks are authoritative; regional parks remain provisional OpenStreetMap candidates.</p>
+        </section>
+
+        <footer>
+          <p>Park boundaries: BC TANTALIS, NRCan/CLSS, and OpenStreetMap. Island outlines: BC Freshwater Atlas.</p>
+          <p><a href="https://www2.gov.bc.ca/gov/content/data/open-data/open-government-license-bc" target="_blank" rel="noreferrer">OGL — BC</a> · <a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank" rel="noreferrer">OGL — Canada</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OSM contributors, ODbL</a></p>
+        </footer>
+      </aside>
+    </main>
+
+    <script src="./vendor/leaflet/leaflet.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+﻿[
+    {
+        "file":  "bc-parks-protected-areas.geojson",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/512/query?where=1%3D1\u0026outFields=*\u0026returnGeometry=true\u0026outSR=4326\u0026f=geojson",
+        "retrievedAt":  "2026-08-14T10:41:12.6878468Z",
+        "bytes":  50244425,
+        "sha256":  "3d7d8d30201e66e92bf67545e06c432be0ef1bc13add9ecc5a84c72ec20bb3de"
+    },
+    {
+        "file":  "bc-parks-protected-areas.schema.json",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/512?f=pjson",
+        "retrievedAt":  "2026-08-14T10:41:12.6985737Z",
+        "bytes":  6342,
+        "sha256":  "dec3c68237cfc064ce0e4abdb3e0e17f8decac8118c5063cc4be6e0acbb14883"
+    },
+    {
+        "file":  "bc-conservancies.geojson",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/269/query?where=1%3D1\u0026outFields=*\u0026returnGeometry=true\u0026outSR=4326\u0026f=geojson",
+        "retrievedAt":  "2026-08-14T10:41:12.7376331Z",
+        "bytes":  29492349,
+        "sha256":  "a94d7a04c6c8f3ca3d4f96eb2f7978f8b00a541ae089ed4b4ff7afd71a3cb163"
+    },
+    {
+        "file":  "bc-conservancies.schema.json",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/269?f=pjson",
+        "retrievedAt":  "2026-08-14T10:41:12.7463140Z",
+        "bytes":  5683,
+        "sha256":  "754ef23c83fe0102d05f400110215e1d216df390120c2b7ce858b86362ef853f"
+    },
+    {
+        "file":  "bc-regional-districts.geojson",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/474/query?where=1%3D1\u0026outFields=*\u0026returnGeometry=true\u0026outSR=4326\u0026f=geojson",
+        "retrievedAt":  "2026-08-14T10:41:12.7894702Z",
+        "bytes":  28400332,
+        "sha256":  "8c6083843f3be657555517727ad6bd0ee9655924cf79d701635ef9cd9f29100d"
+    },
+    {
+        "file":  "bc-regional-districts.schema.json",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/474?f=pjson",
+        "retrievedAt":  "2026-08-14T10:41:12.7954733Z",
+        "bytes":  7212,
+        "sha256":  "e220d5ff865cbea5f7ac4363c8a5a9e736c40e94585d79a10b789e5459458139"
+    },
+    {
+        "file":  "bc-municipalities.geojson",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/3/query?where=1%3D1\u0026outFields=*\u0026returnGeometry=true\u0026outSR=4326\u0026f=geojson",
+        "retrievedAt":  "2026-08-14T10:41:22.1952031Z",
+        "bytes":  6147081,
+        "sha256":  "fc923fab0c7bf65f44fa5d491d7da6493ca5ce2d8f0ff246cf6940b4a417b241"
+    },
+    {
+        "file":  "bc-municipalities.schema.json",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/3?f=pjson",
+        "retrievedAt":  "2026-08-14T10:41:22.3178289Z",
+        "bytes":  7323,
+        "sha256":  "1541aec33b96ed916a081316462865cc8b0e22bb7a545cba778065da12bed7c0"
+    },
+    {
+        "file":  "bc-electoral-areas.geojson",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/495/query?where=1%3D1\u0026outFields=*\u0026returnGeometry=true\u0026outSR=4326\u0026f=geojson",
+        "retrievedAt":  "2026-08-14T10:42:45.0242641Z",
+        "bytes":  54152536,
+        "sha256":  "b9521cb16848b76b007881088a311f077da49935fc33a1476c77c9348fef85d0"
+    },
+    {
+        "file":  "bc-electoral-areas.schema.json",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/495?f=pjson",
+        "retrievedAt":  "2026-08-14T10:42:45.1387592Z",
+        "bytes":  7313,
+        "sha256":  "9a85f4ced842a61bf252305da42913412436a97a53dce43314c9549f5f2d2a22"
+    },
+    {
+        "file":  "canada-national-parks.geojson",
+        "url":  "https://proxyinternet.nrcan-rncan.gc.ca/arcgis/rest/services/CLSS-SATC/CLSS_Administrative_Boundaries/MapServer/1/query?where=1%3D1\u0026outFields=*\u0026returnGeometry=true\u0026outSR=4326\u0026f=geojson",
+        "retrievedAt":  "2026-08-14T10:42:45.1811147Z",
+        "bytes":  26577549,
+        "sha256":  "52168129bb951485e8a8f62e7680797212100b2ddde3e445cfc58b18ca4e562e"
+    },
+    {
+        "file":  "canada-national-parks.schema.json",
+        "url":  "https://proxyinternet.nrcan-rncan.gc.ca/arcgis/rest/services/CLSS-SATC/CLSS_Administrative_Boundaries/MapServer/1?f=pjson",
+        "retrievedAt":  "2026-08-14T10:42:45.1818528Z",
+        "bytes":  15079,
+        "sha256":  "9e6c6b2bf292471dccd1f55fd2c6bba67481e40226862f844ad003380f61d6dd"
+    },
+    {
+        "file":  "bc-gazetteer.csv",
+        "url":  "https://catalogue.data.gov.bc.ca/dataset/d92224ee-03ef-4904-be53-b677d8e01ac4/resource/69738aa8-2cc0-4975-aec6-4dc2e30990bf/download/bc-gazetteer-2026-05-25.csv",
+        "retrievedAt":  "2026-08-14T10:42:45.1943570Z",
+        "bytes":  4813588,
+        "sha256":  "52f848c205d6449cc4d5d07eb3c544c11ed30f39d14de42cd548ccbbc32e8ffd"
+    },
+    {
+        "file":  "bc-gazetteer-feature-types.pdf",
+        "url":  "https://apps.gov.bc.ca/pub/bcgnws/featureTypes?outputFormat=pdf",
+        "retrievedAt":  "2026-08-14T10:42:45.1992640Z",
+        "bytes":  15815,
+        "sha256":  "6cf0022a2e71ec0a7cb5b70e3664858fe501fdba46734f85c35560fe398b7050"
+    },
+    {
+        "file":  "bc-geographical-names.schema.json",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/60?f=pjson",
+        "retrievedAt":  "2026-08-14T10:42:45.2001503Z",
+        "bytes":  7057,
+        "sha256":  "f84fa42583b8fab51b32d579f7a17723aaa2745239016e62e735f6944dccef6a"
+    },
+    {
+        "file":  "bc-geographical-names.geojson",
+        "url":  "https://delivery.maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/60/query (object ID batches)",
+        "retrievedAt":  "2026-08-14T10:42:45.2075965Z",
+        "bytes":  3904771,
+        "sha256":  "dc6f573ea469323db73914dbe09a89213dead33c57992ab1b9e83f3d1683e27c"
+    }
+]

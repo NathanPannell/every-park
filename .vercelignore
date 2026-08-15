@@ -1,0 +1,6 @@
+data-research/
+database/
+dist/
+.env*
+CODEX.md
+Design.md

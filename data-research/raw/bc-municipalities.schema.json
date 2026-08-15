@@ -1,0 +1,328 @@
+{
+ "currentVersion": 10.91,
+ "cimVersion": "2.9.0",
+ "id": 3,
+ "name": "Municipalities - Legally Defined Administrative Areas of BC",
+ "type": "Feature Layer",
+ "description": " Feature class name is 'WHSE_LEGAL_ADMIN_BOUNDARIES.ABMS_MUNICIPALITIES_SP'. See metadata: https://catalogue.data.gov.bc.ca/dataset/e3c3c580-996a-4668-8bc5-6aa7c7dc4932",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 102190,
+  "latestWkid": 3005,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -13239300,
+  "falseY": -8610100,
+  "xyUnits": 10000,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 10000000,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [
+     232,
+     190,
+     255,
+     255
+    ],
+    "outline": {
+     "type": "esriSLS",
+     "style": "esriSLSSolid",
+     "color": [
+      104,
+      104,
+      104,
+      255
+     ],
+     "width": 0.4
+    }
+   },
+   "label": "Municipalities"
+  },
+  "scaleSymbols": true,
+  "transparency": 20,
+  "labelingInfo": null
+ },
+ "defaultVisibility": false,
+ "extent": {
+  "xmin": 250000,
+  "ymin": 350000,
+  "xmax": 2000000,
+  "ymax": 2000000,
+  "spatialReference": {
+   "wkid": 102190,
+   "latestWkid": 3005,
+   "xyTolerance": 0.002,
+   "zTolerance": 0.002,
+   "mTolerance": 0.001,
+   "falseX": -1.4663107336154819E7,
+   "falseY": -9909931.655214028,
+   "xyUnits": 2.875291301218968E8,
+   "falseZ": -1000000,
+   "zUnits": 1000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "ADMIN_AREA_NAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "FEATURE_AREA_SQM",
+   "type": "esriFieldTypeDouble",
+   "alias": "FEATURE_AREA_SQM",
+   "domain": null
+  },
+  {
+   "name": "FEATURE_LENGTH_M",
+   "type": "esriFieldTypeDouble",
+   "alias": "FEATURE_LENGTH_M",
+   "domain": null
+  },
+  {
+   "name": "SHAPE.AREA",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.AREA",
+   "domain": null
+  },
+  {
+   "name": "SHAPE.LEN",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.LEN",
+   "domain": null
+  },
+  {
+   "name": "LGL_ADMIN_AREA_ID",
+   "type": "esriFieldTypeInteger",
+   "alias": "LGL_ADMIN_AREA_ID",
+   "domain": null
+  },
+  {
+   "name": "ADMIN_AREA_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "ADMIN_AREA_NAME",
+   "length": 200,
+   "domain": null
+  },
+  {
+   "name": "ADMIN_AREA_ABBREVIATION",
+   "type": "esriFieldTypeString",
+   "alias": "ADMIN_AREA_ABBREVIATION",
+   "length": 40,
+   "domain": null
+  },
+  {
+   "name": "ADMIN_AREA_BOUNDARY_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "ADMIN_AREA_BOUNDARY_TYPE",
+   "length": 20,
+   "domain": null
+  },
+  {
+   "name": "ADMIN_AREA_GROUP_NAME",
+   "type": "esriFieldTypeString",
+   "alias": "ADMIN_AREA_GROUP_NAME",
+   "length": 200,
+   "domain": null
+  },
+  {
+   "name": "CHANGE_REQUESTED_ORG",
+   "type": "esriFieldTypeString",
+   "alias": "CHANGE_REQUESTED_ORG",
+   "length": 30,
+   "domain": null
+  },
+  {
+   "name": "UPDATE_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "UPDATE_TYPE",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "WHEN_UPDATED",
+   "type": "esriFieldTypeDate",
+   "alias": "WHEN_UPDATED",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "MAP_STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "MAP_STATUS",
+   "length": 12,
+   "domain": null
+  },
+  {
+   "name": "OIC_MO_NUMBER",
+   "type": "esriFieldTypeString",
+   "alias": "OIC_MO_NUMBER",
+   "length": 7,
+   "domain": null
+  },
+  {
+   "name": "OIC_MO_YEAR",
+   "type": "esriFieldTypeString",
+   "alias": "OIC_MO_YEAR",
+   "length": 4,
+   "domain": null
+  },
+  {
+   "name": "OIC_MO_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "OIC_MO_TYPE",
+   "length": 20,
+   "domain": null
+  },
+  {
+   "name": "WEBSITE_URL",
+   "type": "esriFieldTypeString",
+   "alias": "WEBSITE_URL",
+   "length": 254,
+   "domain": null
+  },
+  {
+   "name": "IMAGE_URL",
+   "type": "esriFieldTypeString",
+   "alias": "IMAGE_URL",
+   "length": 254,
+   "domain": null
+  },
+  {
+   "name": "AFFECTED_ADMIN_AREA_ABRVN",
+   "type": "esriFieldTypeString",
+   "alias": "AFFECTED_ADMIN_AREA_ABRVN",
+   "length": 120,
+   "domain": null
+  },
+  {
+   "name": "SHAPE",
+   "type": "esriFieldTypeGeometry",
+   "alias": "SHAPE",
+   "domain": null
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "SHAPE",
+  "type": "esriFieldTypeGeometry",
+  "alias": "SHAPE"
+ },
+ "indexes": [
+  {
+   "name": "ABMS_MUNI_PK",
+   "fields": "LGL_ADMIN_AREA_ID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "R3168471_SDE_ROWID_UK",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "A4978_IX1",
+   "fields": "SHAPE",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": true
+ },
+ "dateFieldsTimeReference": {
+  "timeZone": "Pacific Standard Time",
+  "respectsDaylightSaving": true
+ },
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeAreaFieldName": "SHAPE.AREA",
+  "shapeLengthFieldName": "SHAPE.LEN",
+  "units": "esriMeters"
+ },
+ "hasMetadata": false,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgis/postgis:17-3.5-alpine
+    container_name: every-park-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: every_park
+      POSTGRES_USER: every_park
+      POSTGRES_PASSWORD: every_park_dev
+    ports:
+      - "5433:5432"
+    volumes:
+      - every_park_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U every_park -d every_park"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  every_park_postgres_data:
+

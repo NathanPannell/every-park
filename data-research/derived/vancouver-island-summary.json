@@ -1,0 +1,30 @@
+{
+  "warning": "Preliminary geometric mask; validate eastern and northern edge cases against the final FWA island allowlist.",
+  "provincialProtectedTotal": 203,
+  "provincialByDesignation": {
+    "ECOLOGICAL RESERVE": 44,
+    "PROTECTED AREA": 7,
+    "PROVINCIAL PARK": 152
+  },
+  "conservancies": 24,
+  "national": 2,
+  "nationalNames": [
+    "GULF ISLANDS NATIONAL PARK RESERVE OF CANADA",
+    "PACIFIC RIM NATIONAL PARK RESERVE OF CANADA"
+  ],
+  "poiTotal": 8084,
+  "poiV1Candidates": 6778,
+  "poiByCategory": {
+    "coast_island": 3596,
+    "freshwater": 2067,
+    "heritage": 22,
+    "ice_snow": 6,
+    "other": 570,
+    "park_reference": 218,
+    "populated_administrative": 425,
+    "recreation": 32,
+    "reserve_military": 311,
+    "terrain": 827,
+    "vegetation": 10
+  }
+}

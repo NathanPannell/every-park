@@ -1,0 +1,649 @@
+{
+ "currentVersion": 10.91,
+ "cimVersion": "2.9.0",
+ "id": 46,
+ "name": "Freshwater Atlas - Islands",
+ "type": "Feature Layer",
+ "description": "Feature class name is 'WHSE_BASEMAPPING.FWA_ISLANDS_POLY'. See metadata: https://catalogue.data.gov.bc.ca/dataset/4483aeea-df26-4b83-a565-934c769e74de",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 102190,
+  "latestWkid": 3005,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -13239300,
+  "falseY": -8610100,
+  "xyUnits": 10000,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 1000000,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "ISLAND_TYPE",
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        255,
+        197,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Fresh",
+     "label": "Freshwater"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        85,
+        255,
+        0,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Marine",
+     "label": "Marine"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSSolid",
+       "color": [
+        0,
+        230,
+        169,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "value": "Marine/Fresh",
+     "label": "Marine And Freshwater"
+    }
+   ],
+   "fieldDelimiter": ",",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        135,
+        58,
+        54,
+        255
+       ],
+       "toColor": [
+        135,
+        58,
+        54,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        88,
+        245,
+        109,
+        255
+       ],
+       "toColor": [
+        88,
+        245,
+        109,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        100,
+        83,
+        224,
+        255
+       ],
+       "toColor": [
+        100,
+        83,
+        224,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        78,
+        177,
+        204,
+        255
+       ],
+       "toColor": [
+        78,
+        177,
+        204,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        247,
+        207,
+        106,
+        255
+       ],
+       "toColor": [
+        247,
+        207,
+        106,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        247,
+        109,
+        210,
+        255
+       ],
+       "toColor": [
+        247,
+        109,
+        210,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        112,
+        161,
+        101,
+        255
+       ],
+       "toColor": [
+        112,
+        161,
+        101,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        89,
+        92,
+        150,
+        255
+       ],
+       "toColor": [
+        89,
+        92,
+        150,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        247,
+        87,
+        95,
+        255
+       ],
+       "toColor": [
+        247,
+        87,
+        95,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        235,
+        155,
+        168,
+        255
+       ],
+       "toColor": [
+        235,
+        155,
+        168,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        88,
+        232,
+        213,
+        255
+       ],
+       "toColor": [
+        88,
+        232,
+        213,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        182,
+        152,
+        250,
+        255
+       ],
+       "toColor": [
+        182,
+        152,
+        250,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        176,
+        219,
+        107,
+        255
+       ],
+       "toColor": [
+        176,
+        219,
+        107,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": false,
+ "extent": {
+  "xmin": 320864.222999999,
+  "ymin": 367780.717,
+  "xmax": 1849820.482,
+  "ymax": 1717938.484,
+  "spatialReference": {
+   "wkid": 102190,
+   "latestWkid": 3005,
+   "xyTolerance": 0.001,
+   "zTolerance": 2,
+   "mTolerance": 0.001,
+   "falseX": -13239300,
+   "falseY": -8610100,
+   "xyUnits": 3.162795662266049E8,
+   "falseZ": 0,
+   "zUnits": 1,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "GNIS_NAME_1",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "ISLAND_ID",
+   "type": "esriFieldTypeDouble",
+   "alias": "Island ID",
+   "domain": null
+  },
+  {
+   "name": "ISLAND_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "Island Type",
+   "length": 12,
+   "domain": null
+  },
+  {
+   "name": "GNIS_ID_1",
+   "type": "esriFieldTypeInteger",
+   "alias": "GNIS ID 1",
+   "domain": null
+  },
+  {
+   "name": "GNIS_NAME_1",
+   "type": "esriFieldTypeString",
+   "alias": "GNIS Name 1",
+   "length": 80,
+   "domain": null
+  },
+  {
+   "name": "GNIS_ID_2",
+   "type": "esriFieldTypeInteger",
+   "alias": "GNIS ID 2",
+   "domain": null
+  },
+  {
+   "name": "GNIS_NAME_2",
+   "type": "esriFieldTypeString",
+   "alias": "GNIS Name 2",
+   "length": 80,
+   "domain": null
+  },
+  {
+   "name": "GNIS_ID_3",
+   "type": "esriFieldTypeInteger",
+   "alias": "GNIS ID 3",
+   "domain": null
+  },
+  {
+   "name": "GNIS_NAME_3",
+   "type": "esriFieldTypeString",
+   "alias": "GNIS Name 3",
+   "length": 80,
+   "domain": null
+  },
+  {
+   "name": "FWA_WATERSHED_CODE",
+   "type": "esriFieldTypeString",
+   "alias": "FWA Watershed Code",
+   "length": 143,
+   "domain": null
+  },
+  {
+   "name": "LOCAL_WATERSHED_CODE",
+   "type": "esriFieldTypeString",
+   "alias": "Local Watershed Code",
+   "length": 143,
+   "domain": null
+  },
+  {
+   "name": "AREA_HA",
+   "type": "esriFieldTypeDouble",
+   "alias": "Area in Hectares",
+   "domain": null
+  },
+  {
+   "name": "FEATURE_CODE",
+   "type": "esriFieldTypeString",
+   "alias": "Feature Code",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "GEOMETRY",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Geometry",
+   "domain": null
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "Object ID",
+   "domain": null
+  },
+  {
+   "name": "GEOMETRY.AREA",
+   "type": "esriFieldTypeDouble",
+   "alias": "GEOMETRY.AREA",
+   "domain": null
+  },
+  {
+   "name": "GEOMETRY.LEN",
+   "type": "esriFieldTypeDouble",
+   "alias": "GEOMETRY.LEN",
+   "domain": null
+  },
+  {
+   "name": "FEATURE_AREA_SQM",
+   "type": "esriFieldTypeDouble",
+   "alias": "Feature Area SQM",
+   "domain": null
+  },
+  {
+   "name": "FEATURE_LENGTH_M",
+   "type": "esriFieldTypeDouble",
+   "alias": "Feature Length M",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "GEOMETRY",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Geometry"
+ },
+ "indexes": [
+  {
+   "name": "FWA_IPF50_GEOMAREA_I",
+   "fields": "FEATURE_AREA_SQM",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IPF50_GEOMLEN_I",
+   "fields": "FEATURE_LENGTH_M",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_FCODE_I",
+   "fields": "FEATURE_CODE",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_FWC_I",
+   "fields": "FWA_WATERSHED_CODE",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_GNISI1_I",
+   "fields": "GNIS_ID_1",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_GNISI2_I",
+   "fields": "GNIS_ID_2",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_GNISI3_I",
+   "fields": "GNIS_ID_3",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_GNISN1_I",
+   "fields": "GNIS_NAME_1",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_GNISN2_I",
+   "fields": "GNIS_NAME_2",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_GNISN3_I",
+   "fields": "GNIS_NAME_3",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_LWSC_I",
+   "fields": "LOCAL_WATERSHED_CODE",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  },
+  {
+   "name": "FWA_IP_PK",
+   "fields": "ISLAND_ID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "R239163_SDE_ROWID_UK",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "A4209_IX1",
+   "fields": "GEOMETRY",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": true
+ },
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeAreaFieldName": "GEOMETRY.AREA",
+  "shapeLengthFieldName": "GEOMETRY.LEN",
+  "units": "esriMeters"
+ },
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

@@ -1,0 +1,310 @@
+﻿{
+    "generatedAt":  "2026-08-14T08:49:42.7476525Z",
+    "provincial":  {
+                       "featureCount":  930,
+                       "geometryTypes":  [
+                                             {
+                                                 "value":  "Polygon",
+                                                 "count":  605
+                                             },
+                                             {
+                                                 "value":  "MultiPolygon",
+                                                 "count":  325
+                                             }
+                                         ],
+                       "designations":  [
+                                            {
+                                                "value":  "PROVINCIAL PARK",
+                                                "count":  693
+                                            },
+                                            {
+                                                "value":  "ECOLOGICAL RESERVE",
+                                                "count":  148
+                                            },
+                                            {
+                                                "value":  "PROTECTED AREA",
+                                                "count":  87
+                                            },
+                                            {
+                                                "value":  "RECREATION AREA",
+                                                "count":  2
+                                            }
+                                        ],
+                       "parkClasses":  [
+                                           {
+                                               "value":  "Class A",
+                                               "count":  678
+                                           },
+                                           {
+                                               "value":  "Class C",
+                                               "count":  13
+                                           },
+                                           {
+                                               "value":  "Class B",
+                                               "count":  2
+                                           }
+                                       ]
+                   },
+    "conservancies":  {
+                          "featureCount":  169,
+                          "geometryTypes":  [
+                                                {
+                                                    "value":  "Polygon",
+                                                    "count":  100
+                                                },
+                                                {
+                                                    "value":  "MultiPolygon",
+                                                    "count":  69
+                                                }
+                                            ]
+                      },
+    "national":  {
+                     "canadaFeatureCount":  46,
+                     "bcFeatureCount":  7,
+                     "bcNames":  [
+                                     "GLACIER NATIONAL PARK OF CANADA",
+                                     "GULF ISLANDS NATIONAL PARK RESERVE OF CANADA",
+                                     "GWAII HAANAS NATIONAL PARK RESERVE OF CANADA",
+                                     "KOOTENAY NATIONAL PARK OF CANADA",
+                                     "MOUNT REVELSTOKE NATIONAL PARK OF CANADA",
+                                     "PACIFIC RIM NATIONAL PARK RESERVE OF CANADA",
+                                     "YOHO NATIONAL PARK OF CANADA"
+                                 ],
+                     "bcTypes":  [
+                                     {
+                                         "value":  "National Park of Canada",
+                                         "count":  4
+                                     },
+                                     {
+                                         "value":  "National Park Reserve of Canada",
+                                         "count":  3
+                                     }
+                                 ]
+                 },
+    "gazetteer":  {
+                      "rowCount":  41061,
+                      "columns":  [
+                                      "Official Name",
+                                      "Feature Type",
+                                      "Feature Type Code",
+                                      "Mapsheet",
+                                      "Latitude",
+                                      "Longitude",
+                                      "Datum",
+                                      "LatDD",
+                                      "LongDD"
+                                  ],
+                      "featureTypeColumn":  "Feature Type",
+                      "topFeatureTypes":  [
+                                              {
+                                                  "value":  "Creek (1)",
+                                                  "count":  10781
+                                              },
+                                              {
+                                                  "value":  "Lake",
+                                                  "count":  5934
+                                              },
+                                              {
+                                                  "value":  "Mount",
+                                                  "count":  2398
+                                              },
+                                              {
+                                                  "value":  "Point",
+                                                  "count":  2293
+                                              },
+                                              {
+                                                  "value":  "Mountain",
+                                                  "count":  1868
+                                              },
+                                              {
+                                                  "value":  "Island",
+                                                  "count":  1570
+                                              },
+                                              {
+                                                  "value":  "Indian Reserve-Réserve indienne",
+                                                  "count":  1553
+                                              },
+                                              {
+                                                  "value":  "Peak (2)",
+                                                  "count":  1229
+                                              },
+                                              {
+                                                  "value":  "Bay",
+                                                  "count":  1113
+                                              },
+                                              {
+                                                  "value":  "Community",
+                                                  "count":  897
+                                              },
+                                              {
+                                                  "value":  "River",
+                                                  "count":  851
+                                              },
+                                              {
+                                                  "value":  "Rock (1)",
+                                                  "count":  667
+                                              },
+                                              {
+                                                  "value":  "Glacier",
+                                                  "count":  654
+                                              },
+                                              {
+                                                  "value":  "Provincial Park",
+                                                  "count":  582
+                                              },
+                                              {
+                                                  "value":  "Locality",
+                                                  "count":  557
+                                              },
+                                              {
+                                                  "value":  "Cove (2)",
+                                                  "count":  403
+                                              },
+                                              {
+                                                  "value":  "Railway Point",
+                                                  "count":  386
+                                              },
+                                              {
+                                                  "value":  "Hill",
+                                                  "count":  356
+                                              },
+                                              {
+                                                  "value":  "Pass (2)",
+                                                  "count":  339
+                                              },
+                                              {
+                                                  "value":  "Ridge (2)",
+                                                  "count":  335
+                                              },
+                                              {
+                                                  "value":  "Islands",
+                                                  "count":  330
+                                              },
+                                              {
+                                                  "value":  "Islet",
+                                                  "count":  312
+                                              },
+                                              {
+                                                  "value":  "Lakes",
+                                                  "count":  301
+                                              },
+                                              {
+                                                  "value":  "Range (2)",
+                                                  "count":  299
+                                              },
+                                              {
+                                                  "value":  "Passage",
+                                                  "count":  292
+                                              },
+                                              {
+                                                  "value":  "Inlet (3)",
+                                                  "count":  261
+                                              },
+                                              {
+                                                  "value":  "Rocks (1)",
+                                                  "count":  187
+                                              },
+                                              {
+                                                  "value":  "Islets",
+                                                  "count":  171
+                                              },
+                                              {
+                                                  "value":  "Channel (3)",
+                                                  "count":  159
+                                              },
+                                              {
+                                                  "value":  "Conservation Area",
+                                                  "count":  157
+                                              },
+                                              {
+                                                  "value":  "Ecological Reserve",
+                                                  "count":  148
+                                              },
+                                              {
+                                                  "value":  "Falls",
+                                                  "count":  142
+                                              },
+                                              {
+                                                  "value":  "Reef",
+                                                  "count":  125
+                                              },
+                                              {
+                                                  "value":  "Harbour (1)",
+                                                  "count":  98
+                                              },
+                                              {
+                                                  "value":  "Narrows",
+                                                  "count":  93
+                                              },
+                                              {
+                                                  "value":  "Peaks",
+                                                  "count":  91
+                                              },
+                                              {
+                                                  "value":  "Protected Area",
+                                                  "count":  85
+                                              },
+                                              {
+                                                  "value":  "Slough (2)",
+                                                  "count":  81
+                                              },
+                                              {
+                                                  "value":  "Shoal",
+                                                  "count":  81
+                                              },
+                                              {
+                                                  "value":  "Landing (1)",
+                                                  "count":  80
+                                              }
+                                          ],
+                      "poiCategories":  [
+                                            {
+                                                "value":  "freshwater",
+                                                "count":  18388
+                                            },
+                                            {
+                                                "value":  "coast_island",
+                                                "count":  8242
+                                            },
+                                            {
+                                                "value":  "terrain",
+                                                "count":  7518
+                                            },
+                                            {
+                                                "value":  "populated_administrative",
+                                                "count":  1847
+                                            },
+                                            {
+                                                "value":  "reserve_military",
+                                                "count":  1565
+                                            },
+                                            {
+                                                "value":  "other",
+                                                "count":  1526
+                                            },
+                                            {
+                                                "value":  "park_reference",
+                                                "count":  1044
+                                            },
+                                            {
+                                                "value":  "ice_snow",
+                                                "count":  705
+                                            },
+                                            {
+                                                "value":  "recreation",
+                                                "count":  107
+                                            },
+                                            {
+                                                "value":  "heritage",
+                                                "count":  65
+                                            },
+                                            {
+                                                "value":  "vegetation",
+                                                "count":  54
+                                            }
+                                        ],
+                      "validCoordinateCount":  41060,
+                      "invalidCoordinateCount":  1,
+                      "richMapLayerFeatureCount":  5000
+                  }
+}

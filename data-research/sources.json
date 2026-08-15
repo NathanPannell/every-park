@@ -1,0 +1,77 @@
+{
+  "retrievalPlanned": "2026-08-14",
+  "sources": [
+    {
+      "key": "bc_parks_protected_areas",
+      "title": "BC Parks, Ecological Reserves, and Protected Areas",
+      "publisher": "Government of British Columbia",
+      "sourceUrl": "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/512",
+      "catalogueUrl": "https://catalogue.data.gov.bc.ca/dataset/1130248f-f1a3-4956-8b2e-38d29d3e4af7",
+      "licence": "Open Government Licence - British Columbia",
+      "licenceUrl": "https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data/open-government-licence-bc"
+    },
+    {
+      "key": "bc_conservancies",
+      "title": "TANTALIS - Conservancy Areas",
+      "publisher": "Government of British Columbia",
+      "sourceUrl": "https://delivery.maps.gov.bc.ca/arcgis/rest/services/mpcm/bcgwpub/MapServer/269",
+      "catalogueUrl": "https://catalogue.data.gov.bc.ca/dataset/550b3133-2004-468f-ba1f-b95d0e281e78",
+      "licence": "Open Government Licence - British Columbia",
+      "licenceUrl": "https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data/open-government-licence-bc"
+    },
+    {
+      "key": "national_parks",
+      "title": "National Parks and National Park Reserves of Canada Legislative Boundaries",
+      "publisher": "Natural Resources Canada",
+      "sourceUrl": "https://proxyinternet.nrcan-rncan.gc.ca/arcgis/rest/services/CLSS-SATC/CLSS_Administrative_Boundaries/MapServer/1",
+      "catalogueUrl": "https://open.canada.ca/data/en/dataset/9e1507cd-f25c-4c64-995b-6563bf9d65bd",
+      "licence": "Open Government Licence - Canada",
+      "licenceUrl": "https://open.canada.ca/en/open-government-licence-canada"
+    },
+    {
+      "key": "bc_gazetteer",
+      "title": "BC Gazetteer",
+      "publisher": "Government of British Columbia",
+      "sourceUrl": "https://catalogue.data.gov.bc.ca/dataset/bc-gazetteer",
+      "catalogueUrl": "https://catalogue.data.gov.bc.ca/dataset/d92224ee-03ef-4904-be53-b677d8e01ac4",
+      "licence": "Open Government Licence - British Columbia",
+      "licenceUrl": "https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data/open-government-licence-bc"
+    },
+    {
+      "key": "bc_geographical_names",
+      "title": "BC Geographical Names",
+      "publisher": "Government of British Columbia",
+      "sourceUrl": "https://delivery.maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/60",
+      "catalogueUrl": "https://catalogue.data.gov.bc.ca/dataset/43805524-4add-4474-ad53-1a985930f352",
+      "licence": "Open Government Licence - British Columbia",
+      "licenceUrl": "https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data/open-government-licence-bc"
+    },
+    {
+      "key": "fwa_islands",
+      "title": "Freshwater Atlas Islands",
+      "publisher": "Government of British Columbia",
+      "sourceUrl": "https://delivery.maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/46",
+      "catalogueUrl": "https://catalogue.data.gov.bc.ca/dataset/4483aeea-df26-4b83-a565-934c769e74de",
+      "licence": "Open Government Licence - British Columbia",
+      "licenceUrl": "https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data/open-government-licence-bc"
+    },
+    {
+      "key": "osm_regional_parks",
+      "title": "OpenStreetMap Regional Park Candidates",
+      "publisher": "OpenStreetMap contributors",
+      "sourceUrl": "https://www.openstreetmap.org",
+      "licence": "Open Data Commons Open Database License",
+      "licenceUrl": "https://www.openstreetmap.org/copyright",
+      "status": "provisional community-maintained enrichment"
+    },
+    {
+      "key": "bc_regional_districts",
+      "title": "Regional Districts - Legally Defined Administrative Areas of BC",
+      "publisher": "Government of British Columbia",
+      "sourceUrl": "https://delivery.maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_legal_admin_boundaries/MapServer/16",
+      "catalogueUrl": "https://catalogue.data.gov.bc.ca/dataset/d1aff64e-dbfe-45a6-af97-582b7f6418b9",
+      "licence": "Open Government Licence - British Columbia",
+      "licenceUrl": "https://www2.gov.bc.ca/gov/content/data/policy-standards/data-policies/open-data/open-government-licence-bc"
+    }
+  ]
+}
