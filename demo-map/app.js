@@ -1,8 +1,8 @@
 const PARK_TYPES = {
-  provincial: { label: "Provincial parks", color: "#167552" },
-  national: { label: "National parks", color: "#1d5fa7" },
-  regional: { label: "Regional parks (OSM)", color: "#b45f18" },
-  island: { label: "Large islands", color: "#2e8793" }
+  provincial: { label: "Provincial parks", color: "#2f7d57", symbol: "▲" },
+  national: { label: "National parks", color: "#3478a8", symbol: "✦" },
+  regional: { label: "Regional parks (OSM)", color: "#c46b3d", symbol: "♣" },
+  island: { label: "Large islands", color: "#348f91", symbol: "≈" }
 };
 
 const AUTHORITY_COLORS = {
@@ -156,6 +156,19 @@ function updateSummary(first, firstLabel, second, secondLabel, third, thirdLabel
   document.querySelector("#summary-three-label").textContent = thirdLabel;
 }
 
+function updateProgress(seen, total, label) {
+  const percent = Math.round((seen / Math.max(1, total)) * 100);
+  document.querySelector("#progress-label").textContent = label;
+  document.querySelector("#progress-value").textContent = `${percent}%`;
+  document.querySelector("#progress-fill").style.width = `${percent}%`;
+}
+
+function bumpPanel() {
+  const hero = document.querySelector(".hero");
+  hero.classList.remove("level-enter");
+  requestAnimationFrame(() => hero.classList.add("level-enter"));
+}
+
 function authorityLabelHtml(authority) {
   return `<div class="authority-map-label" data-authority="${authority.authority_key}"><strong>${escapeHtml(authority.short_name)}</strong><span>${authority.park_count} places · ${seenIdCount(authority.place_ids)} seen</span></div>`;
 }
@@ -303,6 +316,8 @@ function showOverview() {
   const totalPlaces = authorities.reduce((total, feature) => total + feature.properties.park_count, 0);
   const seenPlaces = new Set(authorities.flatMap(feature => feature.properties.place_ids).filter(id => visited.has(id))).size;
   updateSummary(totalPlaces, "places", seenPlaces, "seen", authorities.length, "authorities");
+  updateProgress(seenPlaces, totalPlaces, "Island explored");
+  bumpPanel();
   fitLayer(authorityLayer, { padding: [30, 30] });
 }
 
@@ -356,24 +371,36 @@ function renderPlaceList() {
   });
 }
 
-function updateExaggerationMarkers() {
+function updateExaggerationMarkers(celebrateId = null) {
   exaggerationLayer.clearLayers();
-  if (!selectedSubregion || selectedPark) return;
-  placesForSubregion(selectedSubregion)
-    .filter(feature => enabledTypes.has(feature.properties.park_type))
-    .forEach(feature => {
+  if (!selectedSubregion) return;
+  const visible = placesForSubregion(selectedSubregion)
+    .filter(feature => enabledTypes.has(feature.properties.park_type));
+  const selected = visible.find(feature => feature.properties.park_id === selectedPark);
+  const ranked = [...visible].sort((a, b) => b.properties.rank_area - a.properties.rank_area).slice(0, 10);
+  if (selected && !ranked.includes(selected)) ranked.push(selected);
+  ranked.forEach(feature => {
       const properties = feature.properties;
       const shape = parkShapes.get(properties.park_id);
       if (!shape) return;
       const bounds = shape.getBounds();
-      const nw = map.latLngToContainerPoint(bounds.getNorthWest());
-      const se = map.latLngToContainerPoint(bounds.getSouthEast());
-      if (Math.max(Math.abs(se.x - nw.x), Math.abs(se.y - nw.y)) >= 28) return;
-      const marker = L.circleMarker(bounds.getCenter(), {
-        pane: "parks", radius: 9, color: "#fffdf7", weight: 3,
-        fillColor: PARK_TYPES[properties.park_type].color, fillOpacity: .96, opacity: 1
+      const config = PARK_TYPES[properties.park_type];
+      const isSeen = visited.has(properties.park_id);
+      const isSelected = selectedPark === properties.park_id;
+      const isCelebrating = celebrateId === properties.park_id;
+      const confetti = isCelebrating ? `<i class="confetti c1"></i><i class="confetti c2"></i><i class="confetti c3"></i><i class="confetti c4"></i><i class="confetti c5"></i><i class="confetti c6"></i>` : "";
+      const marker = L.marker(bounds.getCenter(), {
+        pane: "mapLabels",
+        interactive: true,
+        keyboard: true,
+        title: titleCase(properties.name),
+        icon: L.divIcon({
+          className: "collectible-marker-host",
+          html: `<div class="collectible-token ${isSeen ? "discovered" : "undiscovered"} ${isSelected ? "selected" : ""} ${isCelebrating ? "celebrating" : ""}" style="--token-color:${config.color}"><span class="token-halo"></span><span class="token-shadow"></span><span class="token-face"><b>${isSeen ? config.symbol : "?"}</b></span>${isSeen ? '<span class="token-check">✓</span>' : ""}${confetti}</div>`,
+          iconSize: [54, 60], iconAnchor: [27, 50]
+        })
       }).addTo(exaggerationLayer);
-      marker.bindTooltip(titleCase(properties.name), { direction: "top", offset: [0, -8] });
+      marker.bindTooltip(titleCase(properties.name), { direction: "top", offset: [0, -42], className: "toy-tooltip" });
       marker.on("click", () => selectPark(properties.park_id));
     });
 }
@@ -416,6 +443,7 @@ function renderSelectedSubregion() {
   document.querySelector("#view-title").textContent = subregion.properties.short_name;
   document.querySelector("#view-intro").textContent = `${regionParks.length} places in this ${subregionTypeLabel(subregion).toLowerCase()}. Select one to reveal the detailed basemap.`;
   updateSummary(regionParks.length, "places", seenCount(regionParks), "seen", Math.round((seenCount(regionParks) / Math.max(1, regionParks.length)) * 100) + "%", "complete");
+  updateProgress(seenCount(regionParks), regionParks.length, "Local area explored");
   buildLayerControls();
   renderPlaceList();
   parkLayer.clearLayers();
@@ -463,6 +491,8 @@ async function selectAuthority(key) {
   document.querySelector("#view-title").textContent = authority.properties.short_name;
   document.querySelector("#view-intro").textContent = `${regionPlaceCount} places across ${localAreas.length} populated municipalities and electoral areas. Choose a local area to continue.`;
   updateSummary(regionPlaceCount, "places", regionSeenCount, "seen", localAreas.length, "local areas");
+  updateProgress(regionSeenCount, regionPlaceCount, `${authority.properties.short_name} explored`);
+  bumpPanel();
   authorityShapes.forEach((shape, authorityKey) => shape.setStyle(zoneStyle(shape.feature, authorityKey === selectedAuthority)));
   buildSubregionControls();
   renderSubregions();
@@ -489,6 +519,7 @@ async function selectSubregion(key) {
   back.hidden = false;
   back.textContent = `← ${authorities.find(feature => feature.properties.authority_key === selectedAuthority).properties.short_name}`;
   document.querySelector("#eyebrow").textContent = `Every Park · ${subregionTypeLabel(subregion)}`;
+  bumpPanel();
   subregionShapes.forEach((shape, subregionKey) => shape.setStyle(subregionStyle(shape.feature, subregionKey === key)));
   renderSelectedSubregion();
   fitLayer(subregionShapes.get(key), { padding: [38, 38], maxZoom: 11 });
@@ -506,15 +537,26 @@ function selectPark(id, zoom = true) {
   document.querySelector("#view-intro").textContent = `${feature.properties.subregion_name}, ${feature.properties.authority_name}. Detailed OpenStreetMap context is now visible.`;
   document.querySelector("#back-button").textContent = `← ${feature.properties.subregion_name}`;
   updateSummary(visited.has(id) ? "Yes" : "No", "seen", feature.properties.area_ha ? Number(feature.properties.area_ha).toLocaleString() : "—", "hectares", 1, "selected");
+  const localPlaces = placesForSubregion(selectedSubregion);
+  updateProgress(seenCount(localPlaces), localPlaces.length, "Local area explored");
+  bumpPanel();
   renderPlaceList();
+  updateExaggerationMarkers();
   if (zoom) fitLayer(shape, { padding: [28, 28], maxZoom: 17 });
   shape.eachLayer(layer => layer.openPopup());
 }
 
 function toggleSeen(id) {
-  if (visited.has(id)) visited.delete(id); else visited.add(id);
+  const discovered = !visited.has(id);
+  if (!discovered) visited.delete(id); else visited.add(id);
   localStorage.setItem("every-park-seen", JSON.stringify([...visited]));
-  if (selectedPark === id) selectPark(id, false); else renderSelectedSubregion();
+  if (selectedPark === id) {
+    selectPark(id, false);
+    updateExaggerationMarkers(discovered ? id : null);
+  } else {
+    renderSelectedSubregion();
+    if (discovered) updateExaggerationMarkers(id);
+  }
 }
 
 function buildLayerControls() {
